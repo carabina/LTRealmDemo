@@ -1,3 +1,6 @@
+
+
+
 Pod::Spec.new do |s|
 s.name = 'LTRealmDemo'
 s.version = '1.0.0'
@@ -6,11 +9,9 @@ s.summary = 'An Animate Water view on iOS.'
 s.homepage = 'https://github.com/CathyLy/LTRealmDemo'
 s.author = { "Cathy" => "137086637@qq.com" }
 s.source = { :git => 'https://github.com/CathyLy/LTRealmDemo.git', :tag => '1.0.0' }
-#= { :git => "https://github.com/CathyLy/LTRealmDemo.git", :tag => "#{s.version}" }
+s.platform = :ios, "8.0"
+s.source_files  = "LTRealmDemo", "LTRealmDemo/*.{h,m}"                    # 模块文件路径配置
+# s.resources = "XWSwiftRefreshT/Icon/xw_icon.bundle"
+# 框架是否使用的ARC
 s.requires_arc = true
-s.ios.deployment_target = '8.0'
-s.source_files  = "LTRealmDemo"， "LTRealmDemo/LTRealmDemo/Realm/*.{h，m}"
-#s.resources = 'SXWaveAnimate/images/*.{png,xib}'
-
-
 end
